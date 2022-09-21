@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../images/back-img.jpg");
+}
+.select{
+    margin-top: 10px;
+    width: 250px !important;
+}
+.cards{
+    gap: 10px;
+    margin-top: 150px;
+}
+.namozVaqti{
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+   
+}
+.card{
+    padding: 10px;
+    width: 350px;
+
+}
+.card img:hover{
+    transform: scale(0.93);
+}
+.card:hover{
+    transform: scale(0.99);
+}
+.hira{
+    position: fixed;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    filter: blur(10px);
+}
+
