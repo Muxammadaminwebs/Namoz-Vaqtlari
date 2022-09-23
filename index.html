@@ -15,32 +15,47 @@
 <body>
     
     <div class="container">
+
+        <div class="window">
+            
+        </div>
         <div class="row">
             <div class="col-12">
                  <h1 class="title text-center text-warning">
                     Namoz vaqtlari
                  </h1>
+           <div class="oyquyosh">
+             <i class="bi bi-brightness-high-fill text-white yoruq"></i>
+            
+             <i class="bi bi-moon-stars oy"></i>
+           </div>
+                 <div class="wey">
+
+                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-6 col-sm-12 hudud">
                 <h3 class="hudud-title text-warning d-flex justify-content-end p-2">Hududni tanlang:</h3>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
                 <select  id="select" class="select p-2 rounded-4">
                     <option disabled selected>Mintaqani tanlang</option>
                 </select>
             </div>
             
         </div>
-        <div class="row mt-5">
-            <div class="col-6 text-center">
-                <h3 class="mintaqa text-warning">Mintaqani tanlang:<span class="mintext text-warning"> Toshkent shaxri</span></h3>
-            </div>
-            <div class="col-6 text-center justify-content-center">
-               <div class="dayTime d-flex ">
-                <h3 class="month text-warning">8-sentyabr 2022-yil</h3>
-                <h3 class="mx-3 text-warning" id="soat">20:58:03</h3>
+        <div class="row d-flex mt-5 rows">
+        
+               <div class="col-6 text-center shaxar">
+                   <h3 class="mintaqa text-warning">Mintaqani tanlang:<span class="mintext text-warning"> Toshkent
+                           shaxri</span></h3>
                </div>
-            </div>
+               <div class="col-6 colTwo text-center justify-content-center">
+                   <div class="dayTime d-flex ">
+                       <h3 class="month text-warning">8-sentyabr 2022-yil</h3>
+                       <h3 class="mx-3 text-warning" id="soat"></h3>
+                   </div>
+               </div>
+         
         </div>
         <div class="row ">
            <div class="cards d-flex">
@@ -76,10 +91,45 @@
                  </div>
            </div>
         </div>
+
+        <div class="row mt-5">
+           <div class="col-6 d-flex justify-content-end">
+             <button class=" btn xaflalikbtn bg-danger">Xaftalik</button>
+           </div>
+           <div class="col-6">
+            <button class="btn bg-info oylikbtn">Oylik</button>
+           </div>
+        </div>
+        <div class="row mt-5 table-responsive  table-responsive-sm  table-responsive-md  table-danger xaftalik">
+           
+                     <table class="table table-striped table-hover table-success table-bordered">
+                   <thead>
+                     <tr>
+                        <th>Mintaqa</th><th>sana</th><th>kun</th><th>Bomdod</th><th>Quyosh</th><th>Peshin</th><th>Asr</th><th>Shom</th><th>Xufton</th>
+                    </tr>
+                   </thead>
+                   <tbody id="week">
+              
+                   </tbody>
+            </table>
+            
+        </div>
+         <div class="row mt-5 table-responsive  table-responsive-sm  table-responsive-md  table-danger oylik">
+           
+                     <table class="table table-striped table-hover table-success table-bordered">
+                   <thead>
+                     <tr>
+                        <th>Mintaqa</th><th>sana</th><th>kun</th><th>Bomdod</th><th>Quyosh</th><th>Peshin</th><th>Asr</th><th>Shom</th><th>Xufton</th>
+                    </tr>
+                   </thead>
+                   <tbody id="month">
+              
+                   </tbody>
+            </table>
+            
+        </div>
     </div>
-    <div class="hira">
-        
-    </div>
+    
 
     <script src="./JavaScript/regions.js"></script>
     <script src="./JavaScript/plugin.js"></script>
